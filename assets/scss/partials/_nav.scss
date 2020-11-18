@@ -1,0 +1,50 @@
+nav {
+    position: fixed;
+    background-color: transparent;
+    width: 10vw;
+    height: 100vh;
+
+    border-right-color: $main_grey;
+    border-right-width: 1px;
+    border-right-style: solid;
+    
+    * {
+        background-color: transparent;
+    }
+
+    img {
+        position: relative;
+        width: 80%;
+        top: 2%;
+        left: 50%;
+        opacity: 0;
+
+        transform: translateX(-50%)
+    }
+
+    #page {
+        position: relative;
+        text-align: center;
+        top: 10%;
+        font-size: 2.2rem;
+
+        li {
+            margin-bottom: 10%;
+            opacity: 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: $main_blue;
+            padding: 2px;
+
+            &:hover {
+                color: $second_blue;
+                border-top: 1px solid rgba($main_blue, 0.8);
+                border-bottom: 1px solid rgba($main_blue, 0.8);
+            }
+        }
+    }
+
+    z-index: 9;
+}
