@@ -20,13 +20,19 @@ setTimeout(() => {
 
                 case 3:
                     const ulChilds = element.childNodes;
-                    for (let j = 0; j < ulChilds.length; j++) {
+                    let j = 0;
+                    setInterval(() => {
                         if (j % 2 === 1) {
                             const li = ulChilds[j];
                             li.style.transition = "1s";
                             li.style.opacity = "1";
                         }
-                    }
+                        j ++;
+
+                        if (j >= ulChilds.length) {
+                            clearInterval();
+                        }
+                    }, 200);
                     i++;
                     break;
 
@@ -37,8 +43,6 @@ setTimeout(() => {
 
             if (i >= navChilds.length) {
                 clearInterval();
-            } else {
-                console.log(i);
             }
         }, 500);
         navbar.style.transition = "1s";
