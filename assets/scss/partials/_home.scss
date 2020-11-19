@@ -38,3 +38,83 @@
         height: 150px;
     }
 }
+
+#speciality {
+    position: absolute;
+    overflow: hidden;
+
+    top: 55%;
+    left: 75%;
+    width: 200px;
+    height: 200px;
+
+    h2 {
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 4rem;
+
+        text-align: center;
+    }
+
+    .trait {
+        background-color: $second_blue;
+        display: block;
+
+        &#trait1 {
+            position: absolute;
+
+            top: 0;
+            left: 40%;
+            height: 1.5px;
+            width: 120px;
+
+            transform: translateX(100%);
+        }
+
+        &#trait2 {
+            position: absolute;
+
+            top: 0;
+            left: 99%;
+            height: 120px;
+            width: 2px;
+
+            transform: translateY(-100%);
+        }
+
+        &#trait3 {
+            position: absolute;
+
+            top: 99%;
+            left: 0;
+            height: 2px;
+            width: 120px;
+
+            transform: translateX(-100%);
+        }
+
+        &#trait4 {
+            position: absolute;
+
+            top: 40%;
+            left: 0;
+            height: 120px;
+            width: 1.5px;
+
+            transform: translateY(100%);
+        }
+    }
+
+    .block {
+        position: absolute;
+        background-color: $main_grey;
+
+        top: 0;
+
+        width: 200px;
+        height: 200px;
+    }
+}
