@@ -1,10 +1,24 @@
 html {
     font-size: 62.5%;
+    overflow-x: hidden;
+    overflow-y: hidden;
     box-sizing: border-box;
     background-color: $main_grey;
 
     body {
         color: $main_blue;
         background-color: $main_grey;
+    }
+    
+    section {
+        position: relative;
+        left: 10%;
+
+        width: 90vw;
+        height: 100vh;
+    }
+
+    .underline {
+        text-decoration: underline;
     }
 }
