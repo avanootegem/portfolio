@@ -1,0 +1,35 @@
+h1.projet {
+    position: relative;
+    top: 15%;
+    left: 10%;
+
+    font-size: 5rem;
+}
+
+#theProject {
+    position: relative;
+    top: 20%;
+    left: 25%;
+
+    .projet {
+        position: relative;
+        padding-bottom: 5vh;
+
+        .explication {
+            display: inline-block;
+            width: 40vw;
+            height: 15vh;
+
+            font-size: 2.5rem;
+        }
+
+        a {
+            position: absolute;
+            top: 0;
+            width: 20vw;
+            height: 15vh;
+
+            border: solid 1px;
+        }
+    }
+}
