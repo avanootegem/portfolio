@@ -1,7 +1,6 @@
 html {
     font-size: 62.5%;
-    overflow-x: hidden;
-    overflow-y: hidden;
+    overflow: hidden;
     box-sizing: border-box;
     background-color: $main_grey;
 
@@ -21,4 +20,12 @@ html {
     .underline {
         text-decoration: underline;
     }
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
