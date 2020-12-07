@@ -297,26 +297,78 @@ h1.projet {
 #theProject {
   position: relative;
   top: 20%;
-  left: 25%;
+  left: 20%;
 }
 
 #theProject .projet {
   position: relative;
-  padding-bottom: 5vh;
+  padding-bottom: 8vh;
 }
 
 #theProject .projet .explication {
   display: inline-block;
   width: 40vw;
-  height: 15vh;
+  height: 25vh;
   font-size: 2.5rem;
 }
 
 #theProject .projet a {
   position: absolute;
   top: 0;
-  width: 20vw;
-  height: 15vh;
+  width: 25vw;
+  height: 25vh;
   border: solid 1px;
+}
+
+#theProject .projet a:hover {
+  opacity: 0.5;
+}
+
+#contact {
+  position: relative;
+  height: 70vh;
+}
+
+#contact form {
+  position: absolute;
+  height: 50vh;
+  width: 60vw;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+#contact form .inputText {
+  display: inline-block;
+  width: 20vw;
+}
+
+#contact form .inputText#blockFirstname {
+  position: relative;
+  left: 30%;
+  -webkit-transform: translateX(-51%);
+          transform: translateX(-51%);
+}
+
+#contact form .inputText input {
+  width: 25vw;
+}
+
+#contact form #blockMail {
+  padding-top: 2vh;
+}
+
+#contact form #blockMail input {
+  width: 53vw;
+}
+
+#contact form #blockMessage {
+  padding-top: 2vh;
+}
+
+#contact form #blockMessage textarea {
+  width: 53vw;
 }
 /*# sourceMappingURL=main.css.map */

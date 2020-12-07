@@ -1,0 +1,48 @@
+#contact {
+    position: relative;
+    height: 70vh;
+
+    form {
+        position: absolute;
+
+        height: 50vh;
+        width: 60vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        font-size: 2rem;
+
+        .inputText {
+            display: inline-block;
+            width: 20vw;
+
+            &#blockFirstname {
+                position: relative;
+                left: 30%;
+
+                transform: translateX(-51%);
+            }
+
+            input {
+                width: 25vw;
+            }
+        }
+
+        #blockMail {
+           padding-top: 2vh;
+
+            input {
+                width: 53vw;
+            }    
+        }
+
+        #blockMessage {
+            padding-top: 2vh;
+            
+            textarea {
+                width: 53vw;
+            }
+        }
+    }
+}
