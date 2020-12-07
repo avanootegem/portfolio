@@ -11,17 +11,19 @@
         left: 50%;
         transform: translate(-50%, -50%);
 
+        padding-left: auto;
+
         font-size: 2rem;
 
         .inputText {
             display: inline-block;
-            width: 20vw;
+            width: 25vw;
 
             &#blockFirstname {
                 position: relative;
-                left: 30%;
+                left: 29%;
 
-                transform: translateX(-51%);
+                transform: translateX(-50%);
             }
 
             input {
@@ -33,7 +35,7 @@
            padding-top: 2vh;
 
             input {
-                width: 53vw;
+                width: 55vw;
             }    
         }
 
@@ -41,7 +43,22 @@
             padding-top: 2vh;
             
             textarea {
-                width: 53vw;
+                width: 55vw;
+            }
+        }
+
+        #button {
+            position: relative;
+            padding-top: 2vh;
+
+            input {
+                position: absolute;
+                color: $main_grey;
+
+                padding: 1vh 1.5vw;
+                right: 4.5vw;
+
+                font-size: 1.5rem;
             }
         }
     }

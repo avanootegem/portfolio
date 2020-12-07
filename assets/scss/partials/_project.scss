@@ -17,9 +17,10 @@ h1.projet {
 
         .explication {
             display: inline-block;
-            width: 40vw;
+            width: 38vw;
             height: 25vh;
 
+            padding-right: 2vw;
             font-size: 2.5rem;
         }
 
@@ -29,10 +30,19 @@ h1.projet {
             width: 25vw;
             height: 25vh;
 
+            color: $second_blue;
             border: solid 1px;
+            font-size: 3rem;
 
             &:hover {
                 opacity: 0.5;
+            }
+
+            img {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
             }
         }
     }

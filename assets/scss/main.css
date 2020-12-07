@@ -307,8 +307,9 @@ h1.projet {
 
 #theProject .projet .explication {
   display: inline-block;
-  width: 40vw;
+  width: 38vw;
   height: 25vh;
+  padding-right: 2vw;
   font-size: 2.5rem;
 }
 
@@ -317,11 +318,21 @@ h1.projet {
   top: 0;
   width: 25vw;
   height: 25vh;
+  color: #0f6496;
   border: solid 1px;
+  font-size: 3rem;
 }
 
 #theProject .projet a:hover {
   opacity: 0.5;
+}
+
+#theProject .projet a img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #contact {
@@ -337,19 +348,20 @@ h1.projet {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  padding-left: auto;
   font-size: 2rem;
 }
 
 #contact form .inputText {
   display: inline-block;
-  width: 20vw;
+  width: 25vw;
 }
 
 #contact form .inputText#blockFirstname {
   position: relative;
-  left: 30%;
-  -webkit-transform: translateX(-51%);
-          transform: translateX(-51%);
+  left: 29%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 #contact form .inputText input {
@@ -361,7 +373,7 @@ h1.projet {
 }
 
 #contact form #blockMail input {
-  width: 53vw;
+  width: 55vw;
 }
 
 #contact form #blockMessage {
@@ -369,6 +381,19 @@ h1.projet {
 }
 
 #contact form #blockMessage textarea {
-  width: 53vw;
+  width: 55vw;
+}
+
+#contact form #button {
+  position: relative;
+  padding-top: 2vh;
+}
+
+#contact form #button input {
+  position: absolute;
+  color: #2c2c2c;
+  padding: 1vh 1.5vw;
+  right: 4.5vw;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */
