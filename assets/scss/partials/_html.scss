@@ -1,5 +1,6 @@
 html {
     font-size: 62.5%;
+    overflow: hidden;
     box-sizing: border-box;
     background-color: $main_grey;
 
@@ -7,4 +8,24 @@ html {
         color: $main_blue;
         background-color: $main_grey;
     }
+    
+    section {
+        position: relative;
+        left: 10%;
+
+        width: 90vw;
+        height: 100vh;
+    }
+
+    .underline {
+        text-decoration: underline;
+    }
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }

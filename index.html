@@ -17,10 +17,10 @@
             <img src="assets/img/avcolor.png" alt="">
 
             <ul id="page">
-                <li> <a href=""> Home </a> </li>
-                <li> <a href=""> About me </a> </li>
-                <li> <a href=""> Projects </a> </li>
-                <li> <a href=""> Contact </a> </li>
+                <li> <a href="#home"> Accueil </a> </li>
+                <li> <a href="#about"> À propos </a> </li>
+                <li> <a href="#project"> Projets </a> </li>
+                <li> <a href="#contact"> Contact </a> </li>
             </ul>
         </nav>
     </header>
@@ -28,16 +28,102 @@
     <section id="home">
         <div id="nameAndJob">
             <div class="text">
-                <h1>Aurelien Vanootegem</h1>
-                <span>Web Developer / Back</span>
+                <h1>Aurélien Vanootegem</h1>
+                <span>Developpeur Web Junior</span>
             </div>
             <div class="block" id="blockName"></div>
         </div>
+        <div id="btn">
+            <div id="blockBtnContact" class="blockBtn">
+                <div class="middle">
+                    <a href="#contact" class="btn">Contact</a>
+                </div>
+            </div>
+            <div id="blockBtnProject" class="blockBtn">
+                <div class="middle">
+                    <a href="#project" class="btn">Projets</a>
+                </div>
+            </div>
+            <div class="block" id="blockBtn"></div>
+        </div>
+        <div id="speciality">
+            <div class="text">
+                <h2>Back</h2>
+                <span id="trait1" class="trait"></span>
+                <span id="trait2" class="trait"></span>
+                <span id="trait3" class="trait"></span>
+                <span id="trait4" class="trait"></span>
+            </div>
+            <div class="block" id="blockSpeciality"></div>
+        </div>
     </section>
 
-    <footer>
-    </footer>
+    <section id="about">
+        <div id="presentation">
+            <p class="pres1">
+                Je suis actuellement en formation de <span class="underline">Designer Web</span> avec l'Access Code
+                School, qui se terminera en
+                Mai 2021.
+            </p>
+            <br>
+            <p class="pres2">
+                Suite à la formation, et des différentes techniques apprises, j'ai donc décidé de m'orienté dans le
+                back.
+            </p>
+            <br>
+        </div>
+    </section>
 
+    <section id="project">
+        <h1 class="projet">Mes projets</h1>
+        <div id="theProject">
+            <div class="projet projet1">
+                <div class="explication">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius officia dolore inventore.
+                    Repudiandae eveniet doloribus distinctio amet provident modi esse quae! Accusamus hic, ullam dolorem
+                    soluta officiis blanditiis unde.
+                </div>
+                <a href=""> <img src="" alt="Projet"> </a>
+            </div>
+
+            <div class="projet projet2">
+                <p class="explication">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum eius officia dolore inventore.
+                    Repudiandae eveniet doloribus distinctio amet provident modi esse quae! Accusamus hic, ullam dolorem
+                    soluta officiis blanditiis unde.
+                </p>
+                <a href=""> <img src="" alt="Projet"> </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <form action="" method="post">
+            <div class="inputText" id="blockLastname">
+                <label for="lastname">Nom : </label> <br>
+                <input type="text" name="lastname" id="lastname" placeholder="Nom">
+            </div>
+
+            <div class="inputText" id="blockFirstname">
+                <label for="firstname">Prénom : </label> <br>
+                <input type="text" name="firstname" id="firstname" placeholder="Prénom">
+            </div>
+            <br>
+
+            <div id="blockMail">
+                <label for="mail">Adresse Mail :</label> <br>
+                <input type="email" name="mail" id="mail" placeholder="Adresse mail">
+            </div>
+
+            <div id="blockMessage">
+                <label for="message">Message</label> <br>
+                <textarea name="message" id="message" cols="30" rows="10"
+                    placeholder="Ecrivez votre message"></textarea>
+            </div>
+        </form>
+    </section>
+
+    <script type="text/javascript" src="assets/js/functions.js"></script>
     <script type="text/javascript" src="assets/js/app.js"></script>
 </body>
 
