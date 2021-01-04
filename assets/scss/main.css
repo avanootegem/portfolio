@@ -18,8 +18,8 @@ html section {
   height: 100vh;
 }
 
-html .underline {
-  text-decoration: underline;
+html .bold {
+  font-weight: bold;
 }
 
 html::-webkit-scrollbar {
@@ -49,7 +49,7 @@ nav * {
 nav img {
   position: relative;
   width: 80%;
-  top: 2%;
+  top: 3%;
   left: 50%;
   opacity: 0;
   -webkit-transform: translateX(-50%);
@@ -59,12 +59,12 @@ nav img {
 nav #page {
   position: relative;
   text-align: center;
-  top: 10%;
-  font-size: 2.2rem;
+  top: 15%;
+  font-size: 2.4rem;
 }
 
 nav #page li {
-  margin-bottom: 10%;
+  margin-bottom: 15%;
   opacity: 0;
 }
 
