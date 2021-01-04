@@ -40,16 +40,13 @@ function createProject(array) {
         lien.href = element[1];
         blockProject.appendChild(lien);
 
-        const image = document.createElement("img");
-        image.src = element[2];
-        image.alt = element[3];
-        lien.appendChild(image)
+        lien.style.backgroundImage = element[2];
         
         project.style.height = (40*(i+1))+"vh";
     }
 }
 
-function addProject(text, href, src, name) {
-    let array = [text, href, src, name];
+function addProject(text, href, src) {
+    let array = [text, href, src];
     arrayProject.push(array);
 }

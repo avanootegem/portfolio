@@ -321,6 +321,9 @@ h1.projet {
   color: #0f6496;
   border: solid 1px;
   font-size: 3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #theProject .projet a:hover {
