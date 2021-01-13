@@ -2,11 +2,12 @@ html {
     font-size: 62.5%;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: $main_grey;
+    background-color: $light_grey;
 
     body {
         color: $main_blue;
-        background-color: $main_grey;
+        text-shadow: $main_white 0.05rem 0.1rem 0.1em;
+        background-color: $light_grey;
     }
     
     section {

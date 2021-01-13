@@ -1,12 +1,8 @@
 nav {
     position: fixed;
-    background-color: transparent;
+    background-color: $main_grey;
     width: 10vw;
     height: 100vh;
-
-    border-right-color: $main_grey;
-    border-right-width: 1px;
-    border-right-style: solid;
     
     * {
         background-color: transparent;
