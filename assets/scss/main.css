@@ -276,11 +276,15 @@ nav #page a:hover {
   height: 200px;
 }
 
-#presentation {
+#about {
+  height: 70vh;
+}
+
+#about #presentation {
   position: relative;
   font-size: 3rem;
   width: 50vw;
-  top: 20%;
+  top: 10%;
   left: 15%;
   text-align: justify;
 }
@@ -292,30 +296,50 @@ h1.projet {
   font-size: 5rem;
 }
 
+#project {
+  height: 50vh;
+}
+
 #theProject {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75vw;
   top: 20%;
-  left: 20%;
+  left: 10%;
 }
 
 #theProject .projet {
   position: relative;
-  padding-bottom: 8vh;
+  width: 350px;
+  height: 200px;
+  margin-bottom: 20px;
 }
 
 #theProject .projet .explication {
-  display: inline-block;
-  width: 38vw;
-  height: 25vh;
-  padding-right: 2vw;
-  font-size: 2.5rem;
+  position: absolute;
+  display: none;
+  width: 320px;
+  text-align: center;
+  font-size: 2rem;
+  color: #c8c8c8;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 #theProject .projet a {
   position: absolute;
   top: 0;
-  width: 25vw;
-  height: 25vh;
+  width: 350px;
+  height: 200px;
   color: #0f6496;
   border: solid 1px;
   font-size: 3rem;
@@ -324,16 +348,21 @@ h1.projet {
   background-position: center;
 }
 
-#theProject .projet a:hover {
-  opacity: 0.5;
-}
-
 #theProject .projet a img {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+#theProject .projet:hover a {
+  opacity: 0.1;
+}
+
+#theProject .projet:hover .explication {
+  display: initial;
+  opacity: 1;
 }
 
 #contact {

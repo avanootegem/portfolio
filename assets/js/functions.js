@@ -31,14 +31,14 @@ function createProject(array) {
         blockProject.classList.add("projet", "projet"+(i+1));
         theProject.appendChild(blockProject);
 
-        const explication = document.createElement("div");
-        explication.classList.add("explication");
-        explication.append(element[0]);
-        blockProject.appendChild(explication);
-
         const lien = document.createElement("a");
         lien.href = element[1];
         blockProject.appendChild(lien);
+
+        const explication = document.createElement("p");
+        explication.classList.add("explication");
+        explication.append(element[0]);
+        blockProject.appendChild(explication);
 
         lien.style.backgroundImage = element[2];
         

@@ -6,29 +6,45 @@ h1.projet {
     font-size: 5rem;
 }
 
+#project {
+    height: 50vh;
+}
+
 #theProject {
+    display: flex;
     position: relative;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    width: 75vw;
     top: 20%;
-    left: 20%;
+    left: 10%;
 
     .projet {
         position: relative;
-        padding-bottom: 8vh;
+        width: 350px;
+        height: 200px;
+        margin-bottom: 20px;
 
         .explication {
-            display: inline-block;
-            width: 38vw;
-            height: 25vh;
+            position: absolute;
+            display: none;
+            width: 320px;
 
-            padding-right: 2vw;
-            font-size: 2.5rem;
+            text-align: center;
+            font-size: 2rem;
+            color: $main_white;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
 
         a {
             position: absolute;
             top: 0;
-            width: 25vw;
-            height: 25vh;
+            width: 350px;
+            height: 200px;
 
             color: $second_blue;
             border: solid 1px;
@@ -38,15 +54,23 @@ h1.projet {
             background-repeat: no-repeat;
             background-position: center;
 
-            &:hover {
-                opacity: 0.5;
-            }
-
             img {
                 position: absolute;
                 left: 50%;
                 top: 50%;
                 transform: translate(-50%, -50%);
+            }
+        }
+
+        &:hover {
+
+            a {
+                opacity: 0.1;
+            }
+
+            .explication {
+                display: initial;
+                opacity: 1;
             }
         }
     }
