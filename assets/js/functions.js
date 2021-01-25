@@ -23,6 +23,7 @@ function moveTheBlock() {
 }
 
 function createProject(array) {
+    let turn = 0;
     const project = document.getElementById("project");
     const theProject = document.getElementById("theProject")
     for (let i = 0; i < array.length; i++) {
@@ -41,8 +42,10 @@ function createProject(array) {
         blockProject.appendChild(explication);
 
         lien.style.backgroundImage = element[2];
-        
-        project.style.height = (40*(i+1))+"vh";
+        if((i+1)% 3 === 1) {
+            turn ++;
+        }
+        project.style.height = (50*(turn))+"vh";
     }
 }
 

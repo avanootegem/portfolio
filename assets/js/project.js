@@ -6,31 +6,31 @@ let src = "url('assets/img/mark.png')";
 addProject(text, href, src);
 
 
-text = "Projet d'introduction à la fonctionnalité des flexbox, 2ème partie de l'intégration Css"
-href = "https://aurelienv.promo-45.codeur.online/Integration_Italianfood/"
+text = "Projet d'introduction à la fonctionnalité des flexbox, 2ème partie de l'intégration Css";
+href = "https://aurelienv.promo-45.codeur.online/Integration_Italianfood/";
 src = "url('assets/img/italian.png')";
 addProject(text, href, src);
 
 
-text = "Projet d'introduction au Php, utile pour pouvoir réviser ses tables de multiplications"
-href = "https://aurelienv.promo-45.codeur.online/ProjetMultiplication/"
+text = "Projet d'introduction au Php, utile pour pouvoir réviser ses tables de multiplications";
+href = "https://aurelienv.promo-45.codeur.online/ProjetMultiplication/";
 src = "url('assets/img/multiplication.png')";
 addProject(text, href, src);
 
 
-text = "Petit jeu en JavaScript, qui est basé sur le principe du jeu bomberman"
-href = "https://aurelienv.promo-45.codeur.online/ProjetBomberman/"
+text = "Petit jeu en JavaScript, qui est basé sur le principe du jeu bomberman";
+href = "https://aurelienv.promo-45.codeur.online/ProjetBomberman/";
 src = "url('assets/img/bomberman.png')";
 addProject(text, href, src);
 
 
-text = "Projet d'introduction au CRUD. Site permettant suite a une connexion, de proposer des idées de Films"
-href = "https://aurelienv.promo-45.codeur.online/ExoSqlFilms/"
+text = "Projet d'introduction au CRUD. Site permettant suite a une connexion, de proposer des idées de Films";
+href = "https://aurelienv.promo-45.codeur.online/ExoSqlFilms/";
 src = "url('assets/img/crud.png')";
 addProject(text, href, src);
 
-text = ""
-href = ""
+text = "";
+href = "";
 src = "";
 addProject(text, href, src);
 
