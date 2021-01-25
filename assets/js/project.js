@@ -18,9 +18,20 @@ src = "url('assets/img/multiplication.png')";
 addProject(text, href, src);
 
 
+text = "Petit jeu en JavaScript, qui est basé sur le principe du jeu bomberman"
+href = "https://aurelienv.promo-45.codeur.online/ProjetBomberman/"
+src = "url('assets/img/bomberman.png')";
+addProject(text, href, src);
+
+
 text = "Projet d'introduction au CRUD. Site permettant suite a une connexion, de proposer des idées de Films"
 href = "https://aurelienv.promo-45.codeur.online/ExoSqlFilms/"
 src = "url('assets/img/crud.png')";
+addProject(text, href, src);
+
+text = ""
+href = ""
+src = "";
 addProject(text, href, src);
 
 createProject(arrayProject);
