@@ -39,17 +39,23 @@ function createProject(array) {
         const explication = document.createElement("p");
         explication.classList.add("explication");
         explication.append(element[0]);
-        blockProject.appendChild(explication);
+        lien.appendChild(explication);
 
         lien.style.backgroundImage = element[2];
+        lien.addEventListener('mouseenter', e => {
+            lien.style.backgroundImage = element[3];
+        })
+        lien.addEventListener('mouseleave', e => {
+            lien.style.backgroundImage = element[2];
+        })
         if((i+1)% 3 === 1) {
             turn ++;
         }
-        project.style.height = (50*(turn))+"vh";
+        project.style.minHeight = (30*(turn))+"vh";
     }
 }
 
-function addProject(text, href, src) {
-    let array = [text, href, src];
+function addProject(text, href, src, srcOp = "unset") {
+    let array = [text, href, src, srcOp];
     arrayProject.push(array);
 }

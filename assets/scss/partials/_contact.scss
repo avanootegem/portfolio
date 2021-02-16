@@ -15,6 +15,15 @@
 
         font-size: 2rem;
 
+        input, textarea {
+            padding: 0.5rem;
+            font-family: 'montserrat_medium';
+
+            &:focus {
+                outline: none;
+            }
+        }
+
         .inputText {
             display: inline-block;
             width: 25vw;
@@ -59,6 +68,40 @@
                 right: 4.5vw;
 
                 font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #contact {
+        form {
+            display: flex;
+            position: relative;
+
+            width: 80vw;
+
+            flex-direction: column;
+
+            input, textarea {
+                width: 80vw !important;
+            }
+
+            .inputText {
+
+                &#blockFirstname {
+                    padding-top: 2vh;
+                    position: initial;
+                    left: 0;
+                    transform: translateX(0);
+                }
+            }
+
+            #button {
+                input {
+                    left: 0;
+                    width: 82vw !important;
+                }
             }
         }
     }

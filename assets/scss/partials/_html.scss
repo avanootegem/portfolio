@@ -3,10 +3,15 @@ html {
     overflow: hidden;
     box-sizing: border-box;
     background-color: $light_grey;
+    font-family: "montserrat_medium";
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
 
     body {
         color: $main_blue;
-        text-shadow: $main_white 0.05rem 0.1rem 0.1em;
+        text-shadow: $main_white 0.01rem 0.1rem 0.1em;
         background-color: $light_grey;
     }
     
@@ -21,12 +26,21 @@ html {
     .bold {
         font-weight: bold;
     }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
-html::-webkit-scrollbar {
-    display: none;
-}
-html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+@media screen and (max-width: 1000px) {
+    html {
+        section {
+            position: relative;
+            left: 0;
+
+            width: 100vw;
+            min-height: 100vh;
+            height: auto;
+        }
+    }
 }

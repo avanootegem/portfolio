@@ -1,13 +1,13 @@
 h1.projet {
     position: relative;
-    top: 15%;
+    padding-top: 10%;
     left: 10%;
 
     font-size: 5rem;
 }
 
 #project {
-    height: 50vh;
+    height: auto;
 }
 
 #theProject {
@@ -17,8 +17,10 @@ h1.projet {
     flex-wrap: wrap;
 
     width: 75vw;
-    top: 20%;
+    padding-top: 2%;
     left: 10%;
+
+    
 
     .projet {
         position: relative;
@@ -64,7 +66,7 @@ h1.projet {
         &:hover {
 
             a {
-                opacity: 0.1;
+                background-image: unset;
             }
 
             .explication {
@@ -72,5 +74,16 @@ h1.projet {
                 opacity: 1;
             }
         }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #theProject {
+        width: 90vw;
+
+        justify-content: space-around;
+
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

@@ -1,5 +1,7 @@
 #about {
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
+    padding-top: 10vh;
 
     #presentation {
         position: relative;
@@ -11,5 +13,17 @@
         left: 15%;
         
         text-align: justify;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #about {
+        #presentation {
+            font-size: 2.5rem;
+
+            width: 90vw;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }

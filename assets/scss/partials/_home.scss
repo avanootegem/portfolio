@@ -1,215 +1,291 @@
-#nameAndJob {
-    position: relative;
-    overflow: hidden;
+#home {
+    #nameAndJob {
+        position: relative;
+        overflow: hidden;
 
-    top: 20%;
-    left: 20%;
-    width: 500px;
-    height: 150px;
-
-    .text {
+        top: 20%;
+        left: 20%;
         width: 500px;
         height: 150px;
 
-        h1 {
-            font-size: 5rem;
+        .text {
+            width: 500px;
+            height: 150px;
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            span {
+                font-size: 3rem;
+            }
         }
 
-        span {
-            font-size: 4rem;
+        .block {
+            position: absolute;
+            background-color: $light_grey;
+
+            top: 0;
+
+            width: 500px;
+            height: 150px;
         }
     }
 
-    .block {
-        position: absolute;
-        background-color: $light_grey;
 
-        top: 0;
+    #btn {
+        position: absolute;
+
+        top: 65%;
+        left: 20%;
 
         width: 500px;
-        height: 150px;
-    }
-}
-
-
-#btn {
-    position: absolute;
-
-    top: 65%;
-    left: 20%;
-
-    width: 500px;
-    height: 120px;
-
-    .blockBtn {
-        position: absolute;
-        width: 250px;
         height: 120px;
 
-        &#blockBtnContact {
-            left: 0;
-        }
-
-        &#blockBtnProject {
-            left: 50%;
-        }
-    }
-
-    .middle {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .btn {
-        position: relative;
-        display: block;
-    
-        color: $main_blue;
-        font-size: 2.5rem;
-        text-decoration: none;
-    
-        border: 2px solid $second_blue;
-        padding: 18px 60px;
-    
-        overflow: hidden;
-        transition: 1s all ease;
-    
-        &::before {
-            background-color: $main_white;
-            content: "";
+        .blockBtn {
             position: absolute;
-            top: 50%; 
+            width: 250px;
+            height: 120px;
+
+            &#blockBtnContact {
+                left: 0;
+            }
+
+            &#blockBtnProject {
+                left: 50%;
+            }
+        }
+
+        .middle {
+            position: absolute;
+            top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            z-index: -1;
-            transition: all 0.6s ease;
         }
-    }
-    
-    #blockBtnContact .btn {
-        &::before {
-            width: 100%;
-            height: 0;
-            transform: translate(-50%, -50%) rotate(45deg);
+        
+        .btn {
+            position: relative;
+            display: block;
+        
+            color: $main_blue;
+            font-size: 2.5rem;
+            text-decoration: none;
+        
+            border: 2px solid $second_blue;
+            padding: 18px 60px;
+        
+            overflow: hidden;
+            transition: 1s all ease;
+        
+            &::before {
+                background-color: $main_white;
+                content: "";
+                position: absolute;
+                top: 50%; 
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: -1;
+                transition: all 0.6s ease;
+            }
         }
-    
-        &:hover {
-            border-color: $main_white;
-            color: $light_grey;
+        
+        #blockBtnContact .btn {
+            &::before {
+                width: 100%;
+                height: 0;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+        
+            &:hover {
+                border-color: $main_white;
+                color: $light_grey;
+            }
+        
+            &:hover::before {
+                height: 320%;
+            }
         }
-    
-        &:hover::before {
-            height: 320%;
+        
+        #blockBtnProject .btn {
+            &::before {
+                width: 100%;
+                height: 0;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        
+            &:hover {
+                border-color: $main_white;
+                color: $light_grey;
+            }
+        
+            &:hover::before {
+                height: 320%;
+            }
         }
-    }
-    
-    #blockBtnProject .btn {
-        &::before {
-            width: 100%;
-            height: 0;
-            transform: translate(-50%, -50%) rotate(-45deg);
-        }
-    
-        &:hover {
-            border-color: $main_white;
-            color: $light_grey;
-        }
-    
-        &:hover::before {
-            height: 320%;
+
+        .block {
+            position: absolute;
+            background-color: $light_grey;
+
+            top: 0;
+
+            width: 500px;
+            height: 120px;
         }
     }
 
-    .block {
+
+    #speciality {
         position: absolute;
-        background-color: $light_grey;
+        overflow: hidden;
 
-        top: 0;
+        top: 45%;
+        left: 75%;
+        width: 200px;
+        height: 200px;
 
-        width: 500px;
-        height: 120px;
+        h2 {
+            position: absolute;
+
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+
+            text-align: center;
+        }
+
+        .trait {
+            background-color: $second_blue;
+            display: block;
+
+            &#trait1 {
+                position: absolute;
+
+                top: 0;
+                left: 40%;
+                height: 2px;
+                width: 120px;
+
+                transform: translateX(100%);
+            }
+
+            &#trait2 {
+                position: absolute;
+
+                top: 0;
+                left: 99%;
+                height: 120px;
+                width: 2px;
+
+                transform: translateY(-100%);
+            }
+
+            &#trait3 {
+                position: absolute;
+
+                top: 99.25%;
+                left: 0;
+                height: 1.5px;
+                width: 120px;
+
+                transform: translateX(-100%);
+            }
+
+            &#trait4 {
+                position: absolute;
+
+                top: 40%;
+                left: 0;
+                height: 120px;
+                width: 1.5px;
+
+                transform: translateY(100%);
+            }
+        }
+
+        .block {
+            position: absolute;
+            background-color: $light_grey;
+
+            top: 0;
+
+            width: 200px;
+            height: 200px;
+        }
     }
 }
 
+@media screen and (max-width: 1000px) {
+    #home {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 15vh;
 
-#speciality {
-    position: absolute;
-    overflow: hidden;
-
-    top: 45%;
-    left: 75%;
-    width: 200px;
-    height: 200px;
-
-    h2 {
-        position: absolute;
-
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 4rem;
-
-        text-align: center;
-    }
-
-    .trait {
-        background-color: $second_blue;
-        display: block;
-
-        &#trait1 {
-            position: absolute;
-
-            top: 0;
-            left: 40%;
-            height: 2px;
-            width: 120px;
-
-            transform: translateX(100%);
+        #nameAndJob, #btn, #speciality {
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
         }
 
-        &#trait2 {
-            position: absolute;
-
-            top: 0;
-            left: 99%;
-            height: 120px;
-            width: 2px;
-
-            transform: translateY(-100%);
+        #btn {
+            padding-bottom: 5vh;
         }
 
-        &#trait3 {
-            position: absolute;
-
-            top: 99.25%;
-            left: 0;
-            height: 1.5px;
-            width: 120px;
-
-            transform: translateX(-100%);
+        #nameAndJob {
+            width: 450px;
+            height: 150px;
         }
 
-        &#trait4 {
-            position: absolute;
-
-            top: 40%;
-            left: 0;
-            height: 120px;
-            width: 1.5px;
-
-            transform: translateY(100%);
-        }
-    }
-
-    .block {
-        position: absolute;
-        background-color: $light_grey;
-
-        top: 0;
-
-        width: 200px;
-        height: 200px;
+        #speciality {
+            .trait {
+                background-color: $second_blue;
+                display: block;
+    
+                &#trait1 {
+                    position: absolute;
+    
+                    top: 0;
+                    left: 40%;
+                    height: 2px;
+                    width: 120px;
+                    transform: translateX(100%);
+                }
+    
+                &#trait2 {
+                    position: absolute;
+    
+                    top: 0;
+                    left: 99%;
+                    height: 120px;
+                    width: 2px;
+    
+                    transform: translateY(-100%);
+                }
+    
+                &#trait3 {
+                    position: absolute;
+    
+                    top: 99.25%;
+                    left: 0;
+                    height: 1.5px;
+                    width: 120px;
+    
+                    transform: translateX(-100%);
+                }
+    
+                &#trait4 {
+                    position: absolute;
+    
+                    top: 40%;
+                    left: 0;
+                    height: 120px;
+                    width: 1.5px;
+    
+                    transform: translateY(100%);
+                }
+            }
+        }      
     }
 }

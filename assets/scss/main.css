@@ -4,11 +4,15 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #4b4b4b;
+  font-family: "montserrat_medium";
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
 html body {
   color: #1e82be;
-  text-shadow: #c8c8c8 0.05rem 0.1rem 0.1em;
+  text-shadow: #c8c8c8 0.01rem 0.1rem 0.1em;
   background-color: #4b4b4b;
 }
 
@@ -27,9 +31,14 @@ html::-webkit-scrollbar {
   display: none;
 }
 
-html {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+@media screen and (max-width: 1000px) {
+  html section {
+    position: relative;
+    left: 0;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+  }
 }
 
 nav {
@@ -57,7 +66,7 @@ nav img {
 nav #page {
   position: relative;
   text-align: center;
-  top: 15%;
+  top: 20%;
   font-size: 2.4rem;
 }
 
@@ -78,7 +87,22 @@ nav #page a:hover {
   border-bottom: 1px solid rgba(30, 130, 190, 0.8);
 }
 
-#nameAndJob {
+@media screen and (max-width: 1300px) {
+  nav {
+    width: 12vw;
+  }
+  nav #page {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  nav {
+    display: none;
+  }
+}
+
+#home #nameAndJob {
   position: relative;
   overflow: hidden;
   top: 20%;
@@ -87,20 +111,20 @@ nav #page a:hover {
   height: 150px;
 }
 
-#nameAndJob .text {
+#home #nameAndJob .text {
   width: 500px;
   height: 150px;
 }
 
-#nameAndJob .text h1 {
-  font-size: 5rem;
-}
-
-#nameAndJob .text span {
+#home #nameAndJob .text h1 {
   font-size: 4rem;
 }
 
-#nameAndJob .block {
+#home #nameAndJob .text span {
+  font-size: 3rem;
+}
+
+#home #nameAndJob .block {
   position: absolute;
   background-color: #4b4b4b;
   top: 0;
@@ -108,7 +132,7 @@ nav #page a:hover {
   height: 150px;
 }
 
-#btn {
+#home #btn {
   position: absolute;
   top: 65%;
   left: 20%;
@@ -116,21 +140,21 @@ nav #page a:hover {
   height: 120px;
 }
 
-#btn .blockBtn {
+#home #btn .blockBtn {
   position: absolute;
   width: 250px;
   height: 120px;
 }
 
-#btn .blockBtn#blockBtnContact {
+#home #btn .blockBtn#blockBtnContact {
   left: 0;
 }
 
-#btn .blockBtn#blockBtnProject {
+#home #btn .blockBtn#blockBtnProject {
   left: 50%;
 }
 
-#btn .middle {
+#home #btn .middle {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -138,7 +162,7 @@ nav #page a:hover {
           transform: translate(-50%, -50%);
 }
 
-#btn .btn {
+#home #btn .btn {
   position: relative;
   display: block;
   color: #1e82be;
@@ -151,7 +175,7 @@ nav #page a:hover {
   transition: 1s all ease;
 }
 
-#btn .btn::before {
+#home #btn .btn::before {
   background-color: #c8c8c8;
   content: "";
   position: absolute;
@@ -164,39 +188,39 @@ nav #page a:hover {
   transition: all 0.6s ease;
 }
 
-#btn #blockBtnContact .btn::before {
+#home #btn #blockBtnContact .btn::before {
   width: 100%;
   height: 0;
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
 
-#btn #blockBtnContact .btn:hover {
+#home #btn #blockBtnContact .btn:hover {
   border-color: #c8c8c8;
   color: #4b4b4b;
 }
 
-#btn #blockBtnContact .btn:hover::before {
+#home #btn #blockBtnContact .btn:hover::before {
   height: 320%;
 }
 
-#btn #blockBtnProject .btn::before {
+#home #btn #blockBtnProject .btn::before {
   width: 100%;
   height: 0;
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
 }
 
-#btn #blockBtnProject .btn:hover {
+#home #btn #blockBtnProject .btn:hover {
   border-color: #c8c8c8;
   color: #4b4b4b;
 }
 
-#btn #blockBtnProject .btn:hover::before {
+#home #btn #blockBtnProject .btn:hover::before {
   height: 320%;
 }
 
-#btn .block {
+#home #btn .block {
   position: absolute;
   background-color: #4b4b4b;
   top: 0;
@@ -204,7 +228,7 @@ nav #page a:hover {
   height: 120px;
 }
 
-#speciality {
+#home #speciality {
   position: absolute;
   overflow: hidden;
   top: 45%;
@@ -213,7 +237,7 @@ nav #page a:hover {
   height: 200px;
 }
 
-#speciality h2 {
+#home #speciality h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -223,12 +247,12 @@ nav #page a:hover {
   text-align: center;
 }
 
-#speciality .trait {
+#home #speciality .trait {
   background-color: #0f6496;
   display: block;
 }
 
-#speciality .trait#trait1 {
+#home #speciality .trait#trait1 {
   position: absolute;
   top: 0;
   left: 40%;
@@ -238,7 +262,7 @@ nav #page a:hover {
           transform: translateX(100%);
 }
 
-#speciality .trait#trait2 {
+#home #speciality .trait#trait2 {
   position: absolute;
   top: 0;
   left: 99%;
@@ -248,7 +272,7 @@ nav #page a:hover {
           transform: translateY(-100%);
 }
 
-#speciality .trait#trait3 {
+#home #speciality .trait#trait3 {
   position: absolute;
   top: 99.25%;
   left: 0;
@@ -258,7 +282,7 @@ nav #page a:hover {
           transform: translateX(-100%);
 }
 
-#speciality .trait#trait4 {
+#home #speciality .trait#trait4 {
   position: absolute;
   top: 40%;
   left: 0;
@@ -268,7 +292,7 @@ nav #page a:hover {
           transform: translateY(100%);
 }
 
-#speciality .block {
+#home #speciality .block {
   position: absolute;
   background-color: #4b4b4b;
   top: 0;
@@ -276,8 +300,78 @@ nav #page a:hover {
   height: 200px;
 }
 
+@media screen and (max-width: 1000px) {
+  #home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 15vh;
+  }
+  #home #nameAndJob, #home #btn, #home #speciality {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+  #home #btn {
+    padding-bottom: 5vh;
+  }
+  #home #nameAndJob {
+    width: 450px;
+    height: 150px;
+  }
+  #home #speciality .trait {
+    background-color: #0f6496;
+    display: block;
+  }
+  #home #speciality .trait#trait1 {
+    position: absolute;
+    top: 0;
+    left: 40%;
+    height: 2px;
+    width: 120px;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+  }
+  #home #speciality .trait#trait2 {
+    position: absolute;
+    top: 0;
+    left: 99%;
+    height: 120px;
+    width: 2px;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+  }
+  #home #speciality .trait#trait3 {
+    position: absolute;
+    top: 99.25%;
+    left: 0;
+    height: 1.5px;
+    width: 120px;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  #home #speciality .trait#trait4 {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    height: 120px;
+    width: 1.5px;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
 #about {
-  height: 70vh;
+  min-height: 70vh;
+  height: auto;
+  padding-top: 10vh;
 }
 
 #about #presentation {
@@ -289,15 +383,25 @@ nav #page a:hover {
   text-align: justify;
 }
 
+@media screen and (max-width: 1000px) {
+  #about #presentation {
+    font-size: 2.5rem;
+    width: 90vw;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+
 h1.projet {
   position: relative;
-  top: 15%;
+  padding-top: 10%;
   left: 10%;
   font-size: 5rem;
 }
 
 #project {
-  height: 50vh;
+  height: auto;
 }
 
 #theProject {
@@ -311,7 +415,7 @@ h1.projet {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 75vw;
-  top: 20%;
+  padding-top: 2%;
   left: 10%;
 }
 
@@ -356,12 +460,23 @@ h1.projet {
 }
 
 #theProject .projet:hover a {
-  opacity: 0.1;
+  background-image: unset;
 }
 
 #theProject .projet:hover .explication {
   display: initial;
   opacity: 1;
+}
+
+@media screen and (max-width: 1000px) {
+  #theProject {
+    width: 90vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
 }
 
 #contact {
@@ -379,6 +494,15 @@ h1.projet {
           transform: translate(-50%, -50%);
   padding-left: auto;
   font-size: 2rem;
+}
+
+#contact form input, #contact form textarea {
+  padding: 0.5rem;
+  font-family: 'montserrat_medium';
+}
+
+#contact form input:focus, #contact form textarea:focus {
+  outline: none;
 }
 
 #contact form .inputText {
@@ -424,5 +548,48 @@ h1.projet {
   padding: 1vh 1.5vw;
   right: 4.5vw;
   font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #contact form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 80vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #contact form input, #contact form textarea {
+    width: 80vw !important;
+  }
+  #contact form .inputText#blockFirstname {
+    padding-top: 2vh;
+    position: initial;
+    left: 0;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  #contact form #button input {
+    left: 0;
+    width: 82vw !important;
+  }
+}
+
+@font-face {
+  font-family: "montserrat_regular";
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: "montserrat_medium";
+  src: url("../fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: "montserrat_bold";
+  src: url("../fonts/Montserrat-Bold.ttf");
 }
 /*# sourceMappingURL=main.css.map */
